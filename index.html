@@ -1,0 +1,45 @@
+<!-- This is my HTML file 
+for the technical challenge
+- Yash Magane
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yash's Hometown Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="title-section">
+    <h1>Yash's Hometown Weather</h1>
+  </header>
+
+  <section id="input-section">
+    <div>
+      <label for="date-input">Enter a date (e.g., Mon Sep 01 2025): </label>
+      <input type="text" id="date-input" placeholder="Type a date here">
+      <button id="show-btn">Show</button>
+      <div id="error-message"></div>
+    </div>
+
+    <div>
+      <label for="graph-btn">Press to see temperatures in a graph: </label>
+      <button id="graph-btn">Show Graph</button>
+    </div>
+  </section>
+
+  <div id="forecast-container">
+    <div id="forecast"></div>
+  </div>
+
+  <div id="graph-container">
+    <canvas id="temp-graph" width="600" height="350" style="border:1px solid #ccc;"></canvas>
+  </div>
+  
+  <script src="forecast.js"></script>
+
+  <footer>
+    <p>Author: Yash Magane</p>
+    <p>This is my submission for the technical challenge, it's not the most appealing but it's my attempt in completing it within the timeframe</p>
+  </footer>
+</body>
+</html>

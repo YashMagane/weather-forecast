@@ -1,0 +1,126 @@
+/*This is my css file to make try make 
+the site visually appealing
+- Yash Magane */
+
+/*FOR ME:
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+Border-radius - roundness
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+#title-section {
+  background-color: #404040;
+  color: white;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+#input-section {
+  color: white;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+#input-section .container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#input-section label {
+  font-weight: bold;
+  color: #333;
+}
+
+#forecast-container {
+  background: url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b?ixlib=rb-4.0.3&q=80&auto=format&fit=crop&w=1350") /* Generated this picture*/
+              no-repeat center center/cover;
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#forecast {
+  max-width: 600px;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#graph-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#graph-container .inner {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#temp-graph {
+  max-width: 90%;
+  height: auto;
+}
+
+.forecast-day {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.forecast-day img { /* style for the html in the script file*/
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-day strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.forecast-day.expanded {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+  transform: scale(1.05);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#error-message {
+  color: red;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #404040;
+  color: white;
+  padding: 20px 10px;
+  width: 100%;
+  display: block;
+}
